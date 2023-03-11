@@ -12,4 +12,5 @@ request.onload = function () {
 
 const populatePage = (petName, petDesc) => {
     /// Populate the page
+    console.log(petName, petDesc)
 }
