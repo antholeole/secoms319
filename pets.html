@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/source-serif-pro" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/67613cf82c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/pets.css">
+    <script src="scripts/pets.js"></script>
+    <title>Pet Store</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><img src="assets/logo.png"></li>
+            <li class="spacer"></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active hl">Pets</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <template id="pet-card" class="pet-card">
+        <style>
+            .pet-card {
+                height: 100%;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                display: flex;
+                flex-direction: column;
+                margin: 10px;
+                width: 300px;
+            }
+
+            .pet-card img {
+                border-radius: 10px;
+                height: 200px;
+                width: 100%;
+            }
+
+            .pet-card h3 {
+                font-size: 1.5em;
+                margin: 0;
+                padding: 10px;
+            }
+        </style>
+        <div class="pet-card">
+            <slot name="img">{{ PET img }}</slot>
+            <slot name="name">{{ PET NAME }}</slot>
+            <slot name="body">{{ PET DESC }}</slot>
+        </div>
+    </template>
+    <section id="pets">
+
+    </section>
+</body>
+<footer>
+    <ul>
+        <li>Logo designed by <a href="http://www.freepik.com">sentavio / Freepik.</a></li>
+        <li>Site By Anthony Oleinik and Tyler Evans.</li>
+    </ul>
+
+</footer>
+</html>

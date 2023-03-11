@@ -54,6 +54,11 @@ nav ul li {
     color: gray;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
 nav ul li.spacer {
     flex-grow: 1;
 }
