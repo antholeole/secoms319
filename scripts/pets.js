@@ -1,5 +1,3 @@
-// basic http request to /pets/pets.json
-
 const request = new XMLHttpRequest();
 request.open('GET', '/pets/pets.json');
 request.responseType = 'json';
@@ -9,7 +7,16 @@ request.onload = function () {
     const pets = request.response;
     const petSlot = document.getElementById('pets');
     Object.keys(pets).forEach(petName => {
-        petSlot.innerHTML += `<pet-card><img slot="img" src="/pets/${petName}.png"><h3 slot="name">${petName}</h3><p slot="body">${pets[petName]}</p></pet-card>`;
+        const html = [
+            `<pet-card>`,
+            `<img slot="img" src="/pets/${petName}.png">`,
+            `<h3 slot="name">${petName}</h3>`,
+            `<p slot="body">${pets[petName]}</p>`,
+            `<a slot="link" href="/pet.html?pet=${petName}">See ${petName}!</a>`,
+            `</pet-card>`
+        ].join('');
+
+        petSlot.innerHTML += html;
     });
 }
 
