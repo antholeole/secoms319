@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="/styles/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Fonts -->
-    <link href="https://fonts.cdnfonts.com/css/source-serif-pro" rel="stylesheet">
     <script src="https://kit.fontawesome.com/67613cf82c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/styles/pets.css">
     <script src="pet.js"></script>
     <title>Pet Store</title>
 </head>
 <body>
     <nav>
         <ul>
-            <li class="logo"><img src="/images/logo.png"></li>
+            <li class="logo"><img src="/myotherimages/logo.png"></li>
             <li class="spacer"></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="pets.html">Pets</a></li>
             <li><a href="contact.html">About</a></li>
         </ul>
     </nav>
-    <div>
-        <h1 id="pet-name"></h1>
+    <h1 id="pet-name"></h1>
+    <div class="pet-container">
         <img id="pet-img">
-        <p id="pet-wgt"></p>
-        <p id="pet-desc"></p>
+        <div>
+            <h4>Weight</h4>
+            <p id="pet-wgt"></p>
+            <h4>Description</h4>
+            <p id="pet-desc"></p>
+        </div>
     </div>
 </body>
 <footer>
