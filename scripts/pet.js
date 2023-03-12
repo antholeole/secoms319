@@ -1,5 +1,5 @@
 const request = new XMLHttpRequest();
-request.open('GET', '/pets/pets.json');
+request.open('GET', "/pets/pets.json");
 request.responseType = 'json';
 request.send();
 
