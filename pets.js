@@ -10,7 +10,7 @@ request.onload = function () {
         const pet = pets.pets[petId];
         const html = [
             `<pet-card>`,
-            `<img slot="img" src="/pets/${pet.id}.png">`,
+            `<img slot="img" src="/images/${pet.id}.png">`,
             `<h3 slot="name">${pet.name}</h3>`,
             `<p slot="body">${pet.desc}</p>`,
             `<a slot="link" href="/pet.html?pet=${pet.id}">See ${pet.name}!</a>`,

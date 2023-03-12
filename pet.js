@@ -13,7 +13,7 @@ request.onload = function () {
 const populatePage = (petName, petDesc, petWgt) => {
     /// Populate the page
     document.getElementById("pet-name").innerHTML = petName;
-    document.getElementById("pet-img").src = "/pets/" + petName + ".png";
+    document.getElementById("pet-img").src = "/images/" + petName + ".png";
     document.getElementById("pet-wgt").innerHTML = petWgt + " lbs";
     document.getElementById("pet-desc").innerHTML = petDesc;
     console.log(petName, petDesc, petWgt)
