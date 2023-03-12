@@ -1,3 +1,105 @@
+/* main.css */
+
+:root {
+    --color-primary: #eea12c;
+    --color-secondary: #fac85b;
+    --color-bg: #ffeedd;
+    --gradient: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-bg);
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Verdana', sans-serif;
+}
+
+.hl {
+    color: var(--color-primary);
+}
+
+.center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NAVBAR */
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 50px;
+    background-color: var(--color-bg);
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+    color: black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li.spacer {
+    flex-grow: 1;
+}
+
+nav ul li.active:after {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    margin: 0 auto;
+    background: var(--color-primary);
+}
+
+nav ul li.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+/* END NAVBAR */
+
+/* BEGIN FOOTER */
+
+footer {
+    padding: 50px;
+    background-color: rgb(22, 22, 22);
+    color: gray;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    color: gray;
+}
+/* END FOOTER */
+
+/* index.css */
+
 /* BEGIN SPLASH */
 .splash {
     min-height: 80vh;
@@ -131,3 +233,41 @@
 }
 
 /* END STATS */
+
+/* pets.css */
+
+#pets {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    grid-auto-rows: 1fr;
+}
+
+/* pet.css */
+
+#pet-name {
+    padding-left: 20px;
+    color: var(--color-primary);
+}
+
+.pet-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.pet-container p {
+    color: gray;
+}
+
+/* contact.css */
+
+.contact {
+    padding: 20px;
+}
+
+.about h4 {
+    color: var(--color-primary);
+}
