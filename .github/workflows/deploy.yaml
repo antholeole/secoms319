@@ -20,8 +20,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Reconfigure URLs
-        run: |
-          ls
+        run: grep -rl '"/' --exclude-dir={pets,assets,.git} ./ | xargs sed -i 's/"\//"\/secoms319\//g'
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
