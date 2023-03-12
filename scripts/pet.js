@@ -12,5 +12,8 @@ request.onload = function () {
 
 const populatePage = (petName, petDesc) => {
     /// Populate the page
+    document.getElementById("pet-name").innerHTML = petName;
+    document.getElementById("pet-img").src = "/pets/" + petName + ".png";
+    document.getElementById("pet-desc").innerHTML = petDesc;
     console.log(petName, petDesc)
 }
