@@ -1,0 +1,10 @@
+{
+    "pets":[
+        {"id": "bow", "name": "Bow", "weight": 9.2, "desc": "This cat is wearing a bow. It is orange and has a red bow - it probably didn't put it on. A human probably put the bow on but the cat doesn't seem to mind."},
+        {"id": "crown", "name": "Crown", "weight": 10.2, "desc": "This cat is wearing a crown. This is fitting, because cats are the kings of the universe. I wouldn't be surprised if there was a cat takeover one day... what a cat-astrophe! Ha!"},
+        {"id": "curious", "name": "Curious", "weight": 9.8, "desc": "This cat is sooo curious. Do you see how it is just looking around? it is probably trying to figure stuff out. It's so little and cute - marvel in it's cuteness."},
+        {"id": "fluffy", "name": "Fluffy", "weight": 11.3, "desc": "This cat is mega fluffy. It reminds me of a snowball. It's white, fluffy, and is being held by a human. I think this cat is very happy since it has a human to bond with."},
+        {"id": "grumpy", "name": "Grumpy", "weight": 10.9, "desc": "Now this is one grumpy cat. I don't think it's actually upset, it just looks that way to us. When cats get upset, they don't make the same facial expressions as humans."},
+        {"id": "gus", "name": "Gus", "weight": 9.7, "desc": "My girlfriend has a bunch of cats and one of them is Gus. Gus is a gray cat - just like this one! They look very similar, but Gus is very old."}
+    ]
+}
